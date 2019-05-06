@@ -4,7 +4,13 @@ body {
 }
 
 header {
-    /* border: 12px solid black; */
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    padding: 10px 0;
+    box-shadow: 0 2px gray;
+    z-index: 10;
 }
 
 .nav-btn {
@@ -35,4 +41,84 @@ header > div:nth-child(3) {
 
 header > div:nth-child(2) {
     width: 25%;
+}
+
+.container {
+    padding-top: 50px;
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+figure {
+    position: relative;
+    left: -250px;
+    display: table;
+}
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+figcaption span {
+    font-family: 'Nunito', sans-serif;
+}
+
+section {
+    position: relative;
+}
+
+aside {
+    width: 210px;
+    position: absolute;
+    right: -250px;
+    bottom: 150px;
+    float: right;
+}
+
+aside h4 {
+    border-bottom: 0.5px solid black; 
+}
+
+aside div { 
+    width: 210px;
+    position: relative;
+}
+
+aside img {
+    height: 75px;
+    width: 75px;
+}
+
+aside p {
+    width: calc(100% - 85px);
+    margin: 0;
+    float: right;
+    color: black;
+}
+
+.chart {
+    left: -150px;
+}
+
+.chart div{
+    background-image: url("../images/inflation-720.png");
+    /* background-repeat: no-repeat; */
+    /* background-color: blueviolet; */
+    background-size: contain;
+    width: 850px;
+    height: 600px;
+    /* position: relative;
+    left: -250px; */
+}
+
+.byline {
+    font-weight: bold;
+    
+}
+
+.byline a {
+    text-decoration: none;
+    color: black;
 }
