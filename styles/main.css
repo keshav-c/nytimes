@@ -69,7 +69,7 @@ section {
     position: relative;
 }
 
-aside {
+.editors-picks {
     width: 210px;
     position: absolute;
     right: -250px;
@@ -77,40 +77,56 @@ aside {
     float: right;
 }
 
-aside h4 {
+.editors-picks h4 {
     border-bottom: 0.5px solid black; 
 }
 
-aside div { 
+.editors-picks div { 
     width: 210px;
     position: relative;
 }
 
-aside img {
+.editors-picks img {
     height: 75px;
     width: 75px;
 }
 
-aside p {
+.editors-picks p {
     width: calc(100% - 85px);
     margin: 0;
     float: right;
     color: black;
+    font-size: 12px;
 }
 
 .chart {
-    left: -150px;
+    left: calc(50% - 425px);
 }
 
 .chart div{
     background-image: url("../images/inflation-720.png");
-    /* background-repeat: no-repeat; */
-    /* background-color: blueviolet; */
+    background-repeat: no-repeat;
     background-size: contain;
     width: 850px;
     height: 600px;
-    /* position: relative;
-    left: -250px; */
+}
+
+
+
+.chart > .chart-texts > div {
+    line-height: 1;
+    font-size: 11px;
+    width: 150px;
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 120px;
+    background: none;
+    margin-right: 20px;
+}
+
+.chart > figcaption {
+    clear: both;
 }
 
 .byline {
@@ -121,4 +137,33 @@ aside p {
 .byline a {
     text-decoration: none;
     color: black;
+}
+
+.signup-aside {
+    width: 210px;
+    position: absolute;
+    right: -250px;
+    bottom: 150px;
+    float: right;
+}
+
+.signup-aside p {
+    font-size: 12px;
+}
+
+.signup-aside h4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.member-btn {
+    background-color: #6288a5;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.signup-aside button {
+    width: 80%;
+    
 }
