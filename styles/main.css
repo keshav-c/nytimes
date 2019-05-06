@@ -1,5 +1,14 @@
-/* .nav-btn {
-    float: left;
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    /* border: 12px solid black; */
+}
+
+.nav-btn {
+    /* float: left; */
 }
 
 .section-title {
@@ -7,24 +16,23 @@
     margin: 0;
 }
 
-header > .member-btn {
+.site-title {
+    width: 300px;
+    margin: 0 auto;
+}
+
+header > div {
+    display: inline-block;
+}
+
+header > div:nth-child(1) {
+    width: 30%;
+}
+
+header > div:nth-child(3) {
     float: right;
 }
 
-.site-title {
-    display: inline-block;
-    width: 300px;
-    margin: 0 auto;
-} */
-
-header {
-    display: flex;
-}
-
-.nav-btn {
-    align-self: flex-start;
-}
-
-.member-btn {
-    align-self: flex-end;
+header > div:nth-child(2) {
+    width: 25%;
 }
