@@ -1,0 +1,30 @@
+/* .nav-btn {
+    float: left;
+}
+
+.section-title {
+    display: inline;
+    margin: 0;
+}
+
+header > .member-btn {
+    float: right;
+}
+
+.site-title {
+    display: inline-block;
+    width: 300px;
+    margin: 0 auto;
+} */
+
+header {
+    display: flex;
+}
+
+.nav-btn {
+    align-self: flex-start;
+}
+
+.member-btn {
+    align-self: flex-end;
+}
