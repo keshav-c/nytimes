@@ -8,13 +8,10 @@ header {
     background-color: white;
     width: 100%;
     top: 0;
-    padding: 10px 0;
+    padding: 0;
     box-shadow: 0 2px gray;
     z-index: 10;
-}
-
-.nav-btn {
-    /* float: left; */
+    text-align: justify;
 }
 
 .section-title {
@@ -23,25 +20,26 @@ header {
 }
 
 .site-title {
-    width: 300px;
-    margin: 0 auto;
+    /* width: 300px; */
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 header > div {
     display: inline-block;
+    /* border: 1px solid red; */
+    vertical-align: top;
+    margin-bottom: 0;
 }
 
-header > div:nth-child(1) {
-    width: 30%;
+header:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
 }
 
-header > div:nth-child(3) {
-    float: right;
-}
-
-header > div:nth-child(2) {
-    width: 25%;
-}
 
 .container {
     padding-top: 50px;
@@ -159,36 +157,38 @@ section {
     padding-right: 100px;
 }
 
-.reco {
+.reco-container {
     width: 80%;
     margin: 0 auto;
+    /* border: 2px solid chocolate; */
+    /* text-align: center; */
 }
 
 .section-reco {
-    width: 70%;
+    width: 50%;
     display: inline-block;
     /* border: 2px solid green; */
     text-align: justify;
-    /* clear: left; */
+    margin-top: 20px;
+    margin-left: 8%;
+    border-top: 1px solid black;
 }
 
 .section-reco div {
     width: 30%;
-    /* margin: 0; */
+    margin: 0;
     display: inline-block;
     /* float: left; */
     /* border: 2px solid red; */
-    margin-right: 5px;
+    /* margin-right: 5px; */
     vertical-align: top;
     padding: 0;
-    /* margin-bottom: 20px; */
-    /* position: relative;
-    top: 0; */
+    text-align: left;
 }
 
-/* We set the container’s text-align to justify and the inside divs’ display to inline-block so they’ll behave like inline elements and can be justified. The vertical-align: top is there to make sure that if one of those divs will be higher than other, all divs will be aligned to the top and not—as it is in default— to the bottom of the #container.
-
-Now the layout will work only with the :after pseudo element. It is required because of the justification specification: the last line in paragraphs is not justified. In our case that last line would be the line with the divs. So we need to create a fake last line with :after pseudo element so the previous one (with divs) will get justified. You could also use an additional element (eg. span) but it will result in a code redundancy */
+/* 
+We set the container’s text-align to justify and the inside divs’ display to inline-block so they’ll behave like inline elements and can be justified. The vertical-align: top is there to make sure that if one of those divs will be higher than other, all divs will be aligned to the top and not—as it is in default — to the bottom of the container. Now the layout will work only with the :after pseudo element. It is required because of the justification specification: the last line in paragraphs is not justified. In our case that last line would be the line with the divs. So we need to create a fake last line with :after pseudo element so the previous one (with divs) will get justified. 
+*/
 
 .section-reco:after {
     content: "";
@@ -196,21 +196,23 @@ Now the layout will work only with the :after pseudo element. It is required bec
     display: inline-block;
   }
 
-
-
-.section-reco img {
-    width: 120%;
-    margin: 0;
-}
-
-.section-reco figure {
+  .section-reco figure {
     display: table;
     /* border: 2px solid blue; */
     text-align: right;
     font-size: smaller;
     max-height: 100px;
-    padding: 0;
+    /* padding: 0; */
+    margin: 5px 0;
+    width: 100%;
 }
+
+.section-reco img {
+    width: 100%;
+    margin: 0;
+}
+
+
 
 .date {
     font-size: 13px;
@@ -219,4 +221,85 @@ Now the layout will work only with the :after pseudo element. It is required bec
 
 .general-reco {
     width: 30%;
+    display: inline-block;
+    /* border: 2px solid maroon; */
+    margin-top: 20px;
+    margin-left: 25px;
+    border-top: 1px solid black;
+    vertical-align: top;
+}
+
+.general-reco p {
+    font-size: 1.2em;
+    line-height: 0.9;
+    border-top: 0.8px solid grey;
+    /* border-bottom: 0.8px solid grey; */
+    padding-top : 20px;
+    color: black;
+}
+
+.general-reco a {
+    text-decoration: none;
+}
+
+nav {
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    border-top-style: double;
+    /* border: 2px solid maroon; */
+}
+
+nav:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.category {
+    display: inline-block;
+    vertical-align: top;
+    /* border: 2px solid green; */
+    /* margin-right: 8.3%; */
+}
+
+.category p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.category a:hover {
+    text-decoration: underline;
+}
+
+.nav-header a:nth-child(1) {
+    display: inline-block;
+}
+
+.nav-header a:nth-child(2) {
+    /* border: 1px solid gold; */
+    margin-top: 15px;
+    float: right;
+}
+
+footer {
+    width: 70%;
+    margin: 0 auto;
+    border-top: 1px solid grey;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
