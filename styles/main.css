@@ -50,7 +50,7 @@ header > div:nth-child(2) {
     margin: 0 auto;
 }
 
-figure {
+.article-img {
     position: relative;
     left: -250px;
     display: table;
@@ -99,36 +99,6 @@ section {
     font-size: 12px;
 }
 
-.chart {
-    left: calc(50% - 425px);
-}
-
-.chart div{
-    background-image: url("../images/inflation-720.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 850px;
-    height: 600px;
-}
-
-
-
-.chart > .chart-texts > div {
-    line-height: 1;
-    font-size: 11px;
-    width: 150px;
-    display: inline-block;
-    float: left;
-    position: relative;
-    top: 120px;
-    background: none;
-    margin-right: 20px;
-}
-
-.chart > figcaption {
-    clear: both;
-}
-
 .byline {
     font-weight: bold;
     
@@ -166,4 +136,62 @@ section {
 .signup-aside button {
     width: 80%;
     
+}
+
+.publish-info {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.publish-info p, .publish-info a {
+    font-size: 14px;
+    font-weight: 200;
+    color: grey;
+}
+
+.publish-info a {
+    text-decoration: none;
+    
+}
+
+.publish-info > .member-btn {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.reco {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.section-reco {
+    /* width: 700px; */
+    display: inline-block;
+    border: 2px solid green;
+}
+
+.section-reco div {
+    width: 280px;
+    margin: 0;
+    display: inline-block;
+    border: 2px solid red;
+    position: relative;
+    top: 0;
+}
+
+.section-reco img {
+    width: 180px;
+}
+
+.section-reco figure {
+    display: table;
+    border: 2px solid blue;
+    text-align: right;
+    font-size: smaller;
+    max-height: 100px; 
+}
+
+.date {
+    font-size: 13px;
+    color: grey;
 }
