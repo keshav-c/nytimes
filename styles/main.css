@@ -160,38 +160,56 @@ section {
 }
 
 .reco {
-    width: 100%;
-    /* margin: 0 auto; */
+    width: 80%;
+    margin: 0 auto;
 }
 
 .section-reco {
     width: 70%;
     display: inline-block;
-    border: 2px solid green;
-    clear: left;
+    /* border: 2px solid green; */
+    text-align: justify;
+    /* clear: left; */
 }
 
 .section-reco div {
     width: 30%;
     /* margin: 0; */
-    /* display: inline-block; */
-    float: left;
-    border: 2px solid red;
-    margin-right: 20px;
+    display: inline-block;
+    /* float: left; */
+    /* border: 2px solid red; */
+    margin-right: 5px;
+    vertical-align: top;
+    padding: 0;
+    /* margin-bottom: 20px; */
     /* position: relative;
     top: 0; */
 }
 
+/* We set the container’s text-align to justify and the inside divs’ display to inline-block so they’ll behave like inline elements and can be justified. The vertical-align: top is there to make sure that if one of those divs will be higher than other, all divs will be aligned to the top and not—as it is in default— to the bottom of the #container.
+
+Now the layout will work only with the :after pseudo element. It is required because of the justification specification: the last line in paragraphs is not justified. In our case that last line would be the line with the divs. So we need to create a fake last line with :after pseudo element so the previous one (with divs) will get justified. You could also use an additional element (eg. span) but it will result in a code redundancy */
+
+.section-reco:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+
+
+
 .section-reco img {
-    width: 180px;
+    width: 120%;
+    margin: 0;
 }
 
 .section-reco figure {
     display: table;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     text-align: right;
     font-size: smaller;
-    max-height: 100px; 
+    max-height: 100px;
+    padding: 0;
 }
 
 .date {
