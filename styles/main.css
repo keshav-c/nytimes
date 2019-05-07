@@ -160,23 +160,26 @@ section {
 }
 
 .reco {
-    width: 900px;
-    margin: 0 auto;
+    width: 100%;
+    /* margin: 0 auto; */
 }
 
 .section-reco {
-    /* width: 700px; */
+    width: 70%;
     display: inline-block;
     border: 2px solid green;
+    clear: left;
 }
 
 .section-reco div {
-    width: 280px;
-    margin: 0;
-    display: inline-block;
+    width: 30%;
+    /* margin: 0; */
+    /* display: inline-block; */
+    float: left;
     border: 2px solid red;
-    position: relative;
-    top: 0;
+    margin-right: 20px;
+    /* position: relative;
+    top: 0; */
 }
 
 .section-reco img {
@@ -194,4 +197,8 @@ section {
 .date {
     font-size: 13px;
     color: grey;
+}
+
+.general-reco {
+    width: 30%;
 }
