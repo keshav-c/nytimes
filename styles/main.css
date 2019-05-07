@@ -20,7 +20,6 @@ header {
 }
 
 .site-title {
-    /* width: 300px; */
     margin-top: 2px;
     margin-bottom: 2px;
     text-align: center;
@@ -29,7 +28,6 @@ header {
 
 header > div {
     display: inline-block;
-    /* border: 1px solid red; */
     vertical-align: top;
     margin-bottom: 0;
 }
@@ -133,7 +131,6 @@ section {
 
 .signup-aside button {
     width: 80%;
-    
 }
 
 .publish-info {
@@ -160,14 +157,11 @@ section {
 .reco-container {
     width: 80%;
     margin: 0 auto;
-    /* border: 2px solid chocolate; */
-    /* text-align: center; */
 }
 
 .section-reco {
     width: 50%;
     display: inline-block;
-    /* border: 2px solid green; */
     text-align: justify;
     margin-top: 20px;
     margin-left: 8%;
@@ -178,9 +172,6 @@ section {
     width: 30%;
     margin: 0;
     display: inline-block;
-    /* float: left; */
-    /* border: 2px solid red; */
-    /* margin-right: 5px; */
     vertical-align: top;
     padding: 0;
     text-align: left;
@@ -198,11 +189,9 @@ We set the container’s text-align to justify and the inside divs’ display to
 
   .section-reco figure {
     display: table;
-    /* border: 2px solid blue; */
     text-align: right;
     font-size: smaller;
     max-height: 100px;
-    /* padding: 0; */
     margin: 5px 0;
     width: 100%;
 }
@@ -222,7 +211,6 @@ We set the container’s text-align to justify and the inside divs’ display to
 .general-reco {
     width: 30%;
     display: inline-block;
-    /* border: 2px solid maroon; */
     margin-top: 20px;
     margin-left: 25px;
     border-top: 1px solid black;
@@ -233,7 +221,6 @@ We set the container’s text-align to justify and the inside divs’ display to
     font-size: 1.2em;
     line-height: 0.9;
     border-top: 0.8px solid grey;
-    /* border-bottom: 0.8px solid grey; */
     padding-top : 20px;
     color: black;
 }
@@ -247,7 +234,6 @@ nav {
     margin: 0 auto;
     text-align: justify;
     border-top-style: double;
-    /* border: 2px solid maroon; */
 }
 
 nav:after {
@@ -264,8 +250,6 @@ nav a {
 .category {
     display: inline-block;
     vertical-align: top;
-    /* border: 2px solid green; */
-    /* margin-right: 8.3%; */
 }
 
 .category p {
@@ -282,7 +266,6 @@ nav a {
 }
 
 .nav-header a:nth-child(2) {
-    /* border: 1px solid gold; */
     margin-top: 15px;
     float: right;
 }
