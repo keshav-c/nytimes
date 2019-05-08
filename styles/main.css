@@ -1,5 +1,4 @@
 body {
-    /* box-sizing: border-box; */
     margin: 0;
 }
 
@@ -26,7 +25,6 @@ section a {
 
 .section-title {
     display: inline;
-    /* margin: 0; */
 }
 
 .site-title {
@@ -89,10 +87,6 @@ section {
     width: 210px;
 }
 
-.editors-picks .aside-heading{
-    border-bottom: 0.5px solid black; 
-}
-
 .editors-picks div { 
     position: relative;
     width: 210px;
@@ -109,6 +103,11 @@ section {
     font-size: 12px;
     margin: 0;
     width: calc(100% - 85px);
+}
+
+.editors-picks  div:first-of-type {
+    border-top: 1px solid black;
+    padding-top: 15px;
 }
 
 .byline {
@@ -129,11 +128,6 @@ section {
 
 .signup-aside p {
     font-size: 12px;
-}
-
-.signup-aside h4 {
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .member-btn {
