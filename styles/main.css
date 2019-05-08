@@ -14,6 +14,16 @@ header {
     z-index: 10;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+section a {
+    color: #6288a5;
+    text-decoration: underline;
+}
+
 .section-title {
     display: inline;
     margin: 0;
@@ -32,7 +42,7 @@ header > div {
     vertical-align: top;
 }
 
-header:after {
+header:after, .section-reco:after, nav:after {
     content: "";
     display: inline-block;
     width: 100%;
@@ -44,6 +54,11 @@ header:after {
     position: relative;
     margin: 0 auto;
     width: 600px;
+}
+
+article h1 {
+    font-size: 2.7em;
+    font-style: italic;
 }
 
 .article-img {
@@ -102,7 +117,6 @@ section {
 
 .byline a {
     color: black;
-    text-decoration: none;
 }
 
 .signup-aside {
@@ -144,10 +158,6 @@ section {
     font-weight: 200;
 }
 
-.publish-info a {
-    text-decoration: none;
-}
-
 .publish-info > .member-btn {
     padding-left: 100px;
     padding-right: 100px;
@@ -179,12 +189,6 @@ section {
 /* 
 We set the container’s text-align to justify and the inside divs’ display to inline-block so they’ll behave like inline elements and can be justified. The vertical-align: top is there to make sure that if one of those divs will be higher than other, all divs will be aligned to the top and not—as it is in default — to the bottom of the container. Now the layout will work only with the :after pseudo element. It is required because of the justification specification: the last line in paragraphs is not justified. In our case that last line would be the line with the divs. So we need to create a fake last line with :after pseudo element so the previous one (with divs) will get justified. 
 */
-
-.section-reco:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-}
 
 .section-reco figure {
     display: table;
@@ -222,26 +226,11 @@ We set the container’s text-align to justify and the inside divs’ display to
     padding-top : 20px;
 }
 
-.general-reco a {
-    text-decoration: none;
-}
-
 nav {
     border-top-style: double;
     margin: 0 auto;
     text-align: justify;
     width: 70%;
-}
-
-nav:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-}
-
-nav a {
-    color: black;
-    text-decoration: none;
 }
 
 .category {
@@ -277,7 +266,6 @@ footer {
 footer a {
     color: grey;
     font-size: 12px;
-    text-decoration: none;
 }
 
 footer a:hover {
