@@ -4,14 +4,14 @@ body {
 }
 
 header {
-    position: fixed;
     background-color: white;
-    width: 100%;
-    top: 0;
-    padding: 0;
     box-shadow: 0 2px gray;
-    z-index: 10;
+    padding: 0;
+    position: fixed;
     text-align: justify;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .section-title {
@@ -20,40 +20,41 @@ header {
 }
 
 .site-title {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    text-align: center;
     font-size: 1.5em;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    text-align: center;
 }
 
 header > div {
     display: inline-block;
-    vertical-align: top;
     margin-bottom: 0;
+    vertical-align: top;
 }
 
 header:after {
     content: "";
-    width: 100%;
     display: inline-block;
+    width: 100%;
 }
 
 
 .container {
     padding-top: 50px;
     position: relative;
-    width: 600px;
     margin: 0 auto;
+    width: 600px;
 }
 
 .article-img {
-    position: relative;
-    left: -250px;
     display: table;
+    left: -250px;
+    position: relative;
 }
+
 figcaption {
-    display: table-caption;
     caption-side: bottom;
+    display: table-caption;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -66,11 +67,11 @@ section {
 }
 
 .editors-picks {
-    width: 210px;
-    position: absolute;
-    right: -250px;
     bottom: 150px;
     float: right;
+    position: absolute;
+    right: -250px;
+    width: 210px;
 }
 
 .editors-picks h4 {
@@ -78,8 +79,8 @@ section {
 }
 
 .editors-picks div { 
-    width: 210px;
     position: relative;
+    width: 210px;
 }
 
 .editors-picks img {
@@ -88,29 +89,28 @@ section {
 }
 
 .editors-picks p {
-    width: calc(100% - 85px);
-    margin: 0;
-    float: right;
     color: black;
+    float: right;
     font-size: 12px;
+    margin: 0;
+    width: calc(100% - 85px);
 }
 
 .byline {
     font-weight: bold;
-    
 }
 
 .byline a {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 
 .signup-aside {
-    width: 210px;
-    position: absolute;
-    right: -250px;
     bottom: 150px;
     float: right;
+    position: absolute;
+    right: -250px;
+    width: 210px;
 }
 
 .signup-aside p {
@@ -118,15 +118,15 @@ section {
 }
 
 .signup-aside h4 {
-    margin-bottom: 0;
     padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .member-btn {
     background-color: #6288a5;
+    border-radius: 10px;
     color: white;
     padding: 10px;
-    border-radius: 10px;
 }
 
 .signup-aside button {
@@ -134,19 +134,18 @@ section {
 }
 
 .publish-info {
-    margin-top: 20px;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .publish-info p, .publish-info a {
+    color: grey;
     font-size: 14px;
     font-weight: 200;
-    color: grey;
 }
 
 .publish-info a {
     text-decoration: none;
-    
 }
 
 .publish-info > .member-btn {
@@ -155,26 +154,26 @@ section {
 }
 
 .reco-container {
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
 }
 
 .section-reco {
-    width: 50%;
-    display: inline-block;
-    text-align: justify;
-    margin-top: 20px;
-    margin-left: 8%;
     border-top: 1px solid black;
+    display: inline-block;
+    margin-left: 8%;
+    margin-top: 20px;
+    text-align: justify;
+    width: 50%;
 }
 
 .section-reco div {
-    width: 30%;
-    margin: 0;
     display: inline-block;
-    vertical-align: top;
+    margin: 0;
     padding: 0;
     text-align: left;
+    vertical-align: top;
+    width: 30%;
 }
 
 /* 
@@ -183,46 +182,44 @@ We set the container’s text-align to justify and the inside divs’ display to
 
 .section-reco:after {
     content: "";
-    width: 100%;
     display: inline-block;
-  }
+    width: 100%;
+}
 
-  .section-reco figure {
+.section-reco figure {
     display: table;
-    text-align: right;
     font-size: smaller;
-    max-height: 100px;
     margin: 5px 0;
+    max-height: 100px;
+    text-align: right;
     width: 100%;
 }
 
 .section-reco img {
-    width: 100%;
     margin: 0;
+    width: 100%;
 }
 
-
-
 .date {
-    font-size: 13px;
     color: grey;
+    font-size: 13px;
 }
 
 .general-reco {
-    width: 30%;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 25px;
     border-top: 1px solid black;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
     vertical-align: top;
+    width: 30%;
 }
 
 .general-reco p {
+    color: black;
+    border-top: 0.8px solid grey;
     font-size: 1.2em;
     line-height: 0.9;
-    border-top: 0.8px solid grey;
     padding-top : 20px;
-    color: black;
 }
 
 .general-reco a {
@@ -230,21 +227,21 @@ We set the container’s text-align to justify and the inside divs’ display to
 }
 
 nav {
-    width: 70%;
+    border-top-style: double;
     margin: 0 auto;
     text-align: justify;
-    border-top-style: double;
+    width: 70%;
 }
 
 nav:after {
     content: "";
-    width: 100%;
     display: inline-block;
+    width: 100%;
 }
 
 nav a {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 
 .category {
@@ -253,8 +250,8 @@ nav a {
 }
 
 .category p {
-    margin-top: 4px;
     margin-bottom: 4px;
+    margin-top: 4px;
 }
 
 .category a:hover {
@@ -266,21 +263,21 @@ nav a {
 }
 
 .nav-header a:nth-child(2) {
-    margin-top: 15px;
     float: right;
+    margin-top: 15px;
 }
 
 footer {
-    width: 70%;
-    margin: 0 auto;
     border-top: 1px solid grey;
+    margin: 0 auto;
     text-align: center;
+    width: 70%;
 }
 
 footer a {
-    text-decoration: none;
     color: grey;
     font-size: 12px;
+    text-decoration: none;
 }
 
 footer a:hover {
