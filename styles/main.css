@@ -89,7 +89,7 @@ section {
     width: 210px;
 }
 
-.editors-picks h4 {
+.editors-picks .aside-heading{
     border-bottom: 0.5px solid black; 
 }
 
